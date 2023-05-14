@@ -33,7 +33,7 @@ const Navbar = ({ links }) => {
                 {/* To change later: Make the Shopping cart Icon a logo photo */}
                 <Avatar sx={{width: 50, height: 50}} alt="Scott MacDonald Profile" src={profileImg} />
               </Typography>
-              <Typography sx={{ marginLeft: 21, align: 'center', fontWeight: 'bold' }} variant="h4"> Scott MacDonald </Typography>
+              <Typography sx={{ marginLeft: 'auto', align: 'center', fontWeight: 'bold' }} variant="h6"> Scott MacDonald </Typography>
             <Drawer links={links}/>
           </>
         ) : (
