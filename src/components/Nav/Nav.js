@@ -15,9 +15,7 @@ import profileImg from '../../assets/images/profile_pic.jpg';
 
 const Navbar = ({ links }) => {
   const theme = useTheme();
-  console.log(theme);
   const isMatch = useMediaQuery(theme.breakpoints.down("md"));
-  console.log(isMatch);
   const [value, setValue] = useState();
   return (
     <AppBar
@@ -30,7 +28,6 @@ const Navbar = ({ links }) => {
         {isMatch ? (
           <>
             <Typography>
-                {/* To change later: Make the Shopping cart Icon a logo photo */}
                 <Avatar sx={{width: 50, height: 50}} alt="Scott MacDonald Profile" src={profileImg} />
               </Typography>
               <Typography sx={{ marginLeft: 'auto', align: 'center', fontWeight: 'bold' }} variant="h6"> Scott MacDonald </Typography>
@@ -40,7 +37,6 @@ const Navbar = ({ links }) => {
           <Grid sx={{ placeItems: "center" }} container>
             <Grid item xs={2}>
               <Typography>
-                {/* To change later: Make the Shopping cart Icon a logo photo */}
                 <Avatar sx={{width: 50, height: 50}} alt="Scott MacDonald" src={profileImg} />
               </Typography>
             </Grid>
