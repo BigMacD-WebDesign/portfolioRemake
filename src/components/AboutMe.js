@@ -42,14 +42,20 @@ const AboutMe = () => {
             }}
           >
             I am a Full Stack Web Developer with an intense passion for code and
-            problem solving. Certified AWS Cloud Practitioner and skilled in HTML, HTML5, CSS, CSS3, JavaScript,
-            jQuery, Bootstrap React.JS, Node.JS, Express, MySQL, MongoDB,
-            Handlebars, Sequelize, AJAX, JSON, Web API. With experience with Google TagManager and Google Analytics. Coding fills me with
-            great satisfaction.
+            problem solving. Certified AWS Cloud Practitioner and skilled in
+            HTML, HTML5, CSS, CSS3, JavaScript, jQuery, Bootstrap React.JS,
+            Node.JS, Express, MySQL, MongoDB, Handlebars, Sequelize, AJAX, JSON,
+            Web API. With experience with Google TagManager and Google
+            Analytics. Coding fills me with great satisfaction.
           </Typography>
           <Typography
             variant=""
-            style={{ color: "white", fontWeight: "bold", paddingTop: 10 }}
+            style={{
+              color: "white",
+              fontWeight: "bold",
+              paddingTop: 5,
+              paddingBottom: 20,
+            }}
           >
             "The capacity to learn is a gift; the ability to learn is a skill;
             the willingness to learn is a choice" -Brian Herbert.
