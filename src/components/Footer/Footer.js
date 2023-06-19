@@ -3,21 +3,16 @@ import {
   AppBar,
   Toolbar,
   Grid,
-  // Typography,
-  // Tabs,
-  // Tab,
   useTheme,
   useMediaQuery,
   Button,
   Link,
-  // IconButton,
-  // Box,
-  // MenuIcon
 } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-// import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
+import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
+import Resume from '../../assets/Resume/Resume.pdf';
 
 const Footer = () => {
   const theme = useTheme();
@@ -34,6 +29,7 @@ const Footer = () => {
         position: "fixed",
         top: "93%",
         placeItems: "center",
+        // marginLeft: "20px"
       }}
     >
       <Toolbar>
@@ -41,19 +37,33 @@ const Footer = () => {
           <>
             <Link href="https://github.com/BigMacD-WebDesign" target="_blank">
               <Button sx={{ color: "white" }}>
-                <GitHubIcon sx={{ paddingRight: "20px" }} />
+                <GitHubIcon sx={{ marginLeft: "20px", paddingRight: "20px" }} />
               </Button>
             </Link>
-            {/* <Button sx={{ color: 'white' }}>
-                <EmailIcon sx={{ paddingRight: "20px" }} />
-              </Button>
+
+            <Link href="mailto:scottmacd88@yahoo.com">
               <Button sx={{ color: "white" }}>
-                <LinkedInIcon href="https://www.linkedin.com/in/scott-macdonald-b7b741a5/" />
-              </Button> */}
+                <EmailIcon sx={{ paddingRight: "10px" }} />
+              </Button>
+            </Link>
+
+            <Link
+              href="https://www.linkedin.com/in/scott-macdonald-b7b741a5/"
+              target="_blank"
+            >
+              <Button sx={{ color: "white" }}>
+                <LinkedInIcon />
+              </Button>
+            </Link>
+
+            <Link href={Resume} target="_blank">
+              <Button sx={{ color: "white" }}>
+                <PictureAsPdfIcon sx={{ paddingRight: "20px" }} />
+              </Button>
+            </Link>
           </>
         ) : (
           <Grid sx={{ placeItems: "center" }} container>
-            
             <Link href="https://github.com/BigMacD-WebDesign" target="_blank">
               <Button sx={{ color: "white" }}>
                 <GitHubIcon
@@ -63,14 +73,27 @@ const Footer = () => {
               </Button>
             </Link>
 
-            <Link>
-            <Button sx={{ color: 'white' }}>
-                <EmailIcon sx={{ paddingRight: "20px" }} />
-              </Button>
-              </Link>
+            <Link href="mailto:scottmacd88@yahoo.com">
               <Button sx={{ color: "white" }}>
-                <LinkedInIcon href="https://www.linkedin.com/in/scott-macdonald-b7b741a5/" />
+                <EmailIcon sx={{ paddingRight: "10px" }} />
               </Button>
+            </Link>
+
+            <Link
+              href="https://www.linkedin.com/in/scott-macdonald-b7b741a5/"
+              target="_blank"
+            >
+              <Button sx={{ color: "white" }}>
+                <LinkedInIcon sx={{ paddingRight: "20px" }} />
+              </Button>
+            </Link>
+
+            <Link href={Resume} target="_blank">
+              <Button sx={{ color: "white" }}>
+                <PictureAsPdfIcon sx={{ paddingRight: "20px" }} />
+              </Button>
+            </Link>
+
           </Grid>
         )}
       </Toolbar>
