@@ -63,7 +63,7 @@ const Footer = () => {
             </Link>
           </>
         ) : (
-          <Grid sx={{ placeItems: "center" }} container>
+          <Grid sx={{ placeItems: "center", marginTop: '-15px' }} container>
             <Link href="https://github.com/BigMacD-WebDesign" target="_blank">
               <Button sx={{ color: "white" }}>
                 <GitHubIcon

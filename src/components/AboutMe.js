@@ -28,7 +28,7 @@ const AboutMe = () => {
           <Grid item xs={12} md={12}>
             <Typography
               variant="h2"
-              style={{ color: "white", paddingTop: 10, fontWeight: "bold" }}
+              style={{ color: "white", paddingTop: 10, fontWeight: "bold", fontSize: '30px' }}
             >
               About Me
             </Typography>
@@ -39,6 +39,7 @@ const AboutMe = () => {
               color: "white",
               paddingTop: 20,
               fontWeight: "bold",
+              fontSize: '18px'
             }}
           >
             I am a Full Stack Web Developer with an intense passion for code and
@@ -73,7 +74,7 @@ const AboutMe = () => {
           <Grid item xs={12} md={12}>
             <Typography
               variant="h2"
-              style={{ color: "white", paddingTop: 10, fontWeight: "bold" }}
+              style={{ color: "white", paddingTop: 10, fontWeight: "bold", fontSize: 30 }}
             >
               About Me
             </Typography>
@@ -88,7 +89,8 @@ const AboutMe = () => {
               variant="h6"
               style={{
                 color: "white",
-                paddingTop: 20,
+                paddingTop: 10,
+                fontSize: 18
               }}
             >
               I am a Full Stack Web Developer with an intense passion for code
@@ -99,7 +101,7 @@ const AboutMe = () => {
             </Typography>
           </Grid>
           <Grid item xs={12} md={12}>
-            <Typography variant="h6" style={{ color: "white", paddingTop: 10 }}>
+            <Typography variant="h6" style={{ color: "white", paddingTop: 10, fontSize: 18 }}>
               "The capacity to learn is a gift; the ability to learn is a skill;
               the willingness to learn is a choice" -Brian Herbert.
             </Typography>
